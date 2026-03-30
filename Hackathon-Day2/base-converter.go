@@ -94,7 +94,7 @@ func decTobinhex(text string) (string, string, error) {
 func main() {
 start:
 	userinput := bufio.NewScanner(os.Stdin)
-	fmt.Println("\nEnter any of the following commands to perform a Base Convertion: 'convert 1E hex', 'convert 10 bin', 'convert 255 decimal'; and/or press 'q' to quit: ")
+	fmt.Println("\nEnter any of the following commands to perform a Base Convertion: 'convert 1E hex', 'convert 10 bin', 'convert 255 dec'; and/or press 'q' to quit: ")
 	if !userinput.Scan() {
 		fmt.Println("Invalid")
 		goto start
